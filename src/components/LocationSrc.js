@@ -29,7 +29,7 @@ export default function LocationSrc({onCityFound}) {
 
 
   return (
-    <div className='row center col-4 offset-4 mt-4'>
+    <div className='row center  col-10 col-ms-10 offset-ms-4 offset-1 mt-4'>
         <input style={{textAlign: "center"}}
           
           value={city}
