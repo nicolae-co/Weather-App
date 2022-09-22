@@ -76,7 +76,7 @@ function App() {
         <div className='col-10 offset-1'>
           <div className='row'>
           {!!forecast && forecast.map((i, index)=>(
-          <div className='col-3 mt-1 mb-1 pt-2 pb-2 border border-dark ' key={index}>
+          <div className='col-6  mt-1 mb-1 pt-2 pb-2 border border-dark ' key={index}>
             <Weather 
               temp={i.main.temp} 
               temp_min={i.main.temp_min} 

@@ -2,10 +2,34 @@
     box-sizing: border-box;
 }
 
+html,#root{
+    background-color: rgb(104, 158, 192);
+    color: white;
+}
 
 .center{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+
+p.center{
+    margin: 0;
+}
+
+.grey-text{
+    color: lightgray;
+}
+
+.font-size-medium{
+    font-size:x-large;
+}
+
+
+
+#link{
+    text-decoration: none;
+    color:inherit;
 }

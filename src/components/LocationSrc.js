@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 
 
 import { API_KEY } from '../constants'
+import '../style.css'
 
 export default function LocationSrc({onCityFound}) {
 
@@ -29,20 +30,29 @@ export default function LocationSrc({onCityFound}) {
 
 
   return (
-    <div className='row center  col-10 col-ms-10 offset-ms-4 offset-1 mt-4'>
-        <input style={{textAlign: "center"}}
+    <div className='row mt-4'>
+      <div className='col-10 col-sm-10 offset-1'>
+        <div className='row center'>
           
-          value={city}
-          onChange={(event) => setCity(event.target.value)}
-          placeholder="Enter location"
-          required
-        />
-        <button
-            className="icon search"
-            onClick={()=>getLocation(city)}
-          >
-            Getdata
-        </button>
+        <input 
+            className='input col-8 form-control'
+            style={{textAlign: "center"}}
+            value={city}
+            onChange={(event) => setCity(event.target.value)}
+            placeholder="Enter location"
+            required
+          />
+          <button
+              className="icon col-4 search btn btn-primary mt-2"
+              onClick={()=>getLocation(city)}
+              
+            >
+              <a id='link' href='#first-row'>Search</a>
+          </button>
+        </div>
+          
+      </div>
+        
         
     </div>
   )
