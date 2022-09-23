@@ -75,12 +75,13 @@ function App() {
         <div className='row'>
         <div className='col-10 offset-1'>
           <div className='row'>
+            {isShown && <p className='h5'>3H FORECAST</p>}
+            
           {!!forecast && forecast.map((i, index)=>(
-          <div className='col-6  mt-1 mb-1 pt-2 pb-2 border border-dark ' key={index}>
+          <div className='col-4 col-sm-2  mt-1 mb-1 pt-2 pb-2 border border-dark ' key={index}>
             <Weather 
               temp={i.main.temp} 
-              temp_min={i.main.temp_min} 
-              temp_max={i.main.temp_max} 
+               
               dt_txt={i.dt_txt}
               sky={i.weather[0].main}
               icon={i.weather[0].icon}

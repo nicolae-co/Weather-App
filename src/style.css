@@ -15,7 +15,7 @@ html,#root{
 }
 
 
-p.center{
+p{
     margin: 0;
 }
 
@@ -32,4 +32,8 @@ p.center{
 #link{
     text-decoration: none;
     color:inherit;
+}
+
+.margin-bottom{
+    margin-bottom: 6px;
 }
