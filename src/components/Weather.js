@@ -16,20 +16,43 @@ export  const  Weather = ({temp, dt_txt, sky, icon}) => {
   const date = day.concat(month.concat(year))
   console.log(date)
 
+  let monthString
+  switch (month) {
+    case "01": monthString = 'JAN'; break;
+    case "02": monthString = 'FEB'; break; 
+    case "03": monthString = 'MAR'; break; 
+    case "04": monthString = 'APR'; break; 
+    case "05": monthString = 'MAY'; break; 
+    case "06": monthString = 'JUN'; break; 
+    case "07": monthString = 'JUL'; break; 
+    case "08": monthString = 'AUG'; break; 
+    case "09": monthString = 'SEPT'; break; 
+    case "10": monthString = 'OCT'; break; 
+    case "11": monthString = 'NOV'; break; 
+    case "12": monthString = 'DEC'; break;
+  
+    default:
+      break;
+  }
+
+
+
   return (
-      <>
+      
         
 
 
-      <div className='center '>
+      <div className='center d-flex flex-row'>
+        <div>
+        <div>{day}/{monthString}</div>
+        <div>{hour}:{minute}</div>
+        </div>
         
-      <div>{day}/{month}/{year}</div>
-      <div>{hour}:{minute}</div>
         
         <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt={icon}/>
         <div>{Math.round(temp)}°C</div>
       </div>
-      </>
+      
       
     
     
