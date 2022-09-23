@@ -50,7 +50,7 @@ export  const  Weather = ({temp, dt_txt, sky, icon}) => {
         
         
         <img className='icon-size' src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt={icon}/>
-        <div style={{fontSize: 25}}>{Math.round(temp)}°C</div>
+        <div style={{fontSize: 20}}>{Math.round(temp)}°C</div>
       </div>
       
       
