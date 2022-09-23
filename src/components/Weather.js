@@ -42,15 +42,15 @@ export  const  Weather = ({temp, dt_txt, sky, icon}) => {
         
 
 
-      <div className='center d-flex flex-row'>
-        <div>
+      <div className='center d-flex flex-row forecast-box'>
+        <div style={{fontSize: 10}}>
         <div>{day}/{monthString}</div>
         <div>{hour}:{minute}</div>
         </div>
         
         
-        <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt={icon}/>
-        <div>{Math.round(temp)}°C</div>
+        <img className='icon-size' src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt={icon}/>
+        <div style={{fontSize: 25}}>{Math.round(temp)}°C</div>
       </div>
       
       

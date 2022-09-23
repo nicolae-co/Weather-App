@@ -37,3 +37,17 @@ p{
 .margin-bottom{
     margin-bottom: 6px;
 }
+
+.icon-size{
+    height: 50px;
+    width: 50px;
+}
+
+.forecast-box{
+    background-color: lightblue;
+    border-radius: 4px;
+    padding: 0;
+    width: 150px;
+    margin: 0 2px;
+    color: grey;
+}
