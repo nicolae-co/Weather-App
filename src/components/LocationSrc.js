@@ -32,7 +32,7 @@ export default function LocationSrc({onCityFound}) {
   return (
     <div className='row mt-4'>
       <div className='col-10 col-sm-10 offset-1'>
-        <div className='row center'>
+        <div className='row center pb-3 border-bottom'>
           
         <input 
             className='input col-8 form-control'

@@ -47,7 +47,7 @@ export default function CurrentWeather({
     <div className='row mt-4' id='first-row'>
       <div className='col-10 offset-1'>
         <div className='row '>
-          <div className='col-12 col-sm-6 mb-5 center'>
+          <div className='col-12 col-sm-6 mb-5 center border-end'>
             <div className='col-12 col-sm-1 pt-3 center h1'>{cityName},{country}</div>
             <div style={{fontSize: 60}} className='col-12 col-md-6 center'>{Math.round(currentTemp)}°C</div>
             <div className='col-12 col-sm-12 center'>{Math.round(currentMinTemp)}°C / {Math.round(currentMaxTemp)}°C</div>
@@ -65,20 +65,20 @@ export default function CurrentWeather({
         {/* </div> */}
         {/* <div className='row mb-5'> */}
         <div className='col-6 col-sm-3'>
-          <div className='col-12 col-sm-6 h5 mb-4 px-2'>COMFORT LEVEL</div>
+          <div className='col-12 col-sm-12 h5 mb-4 px-2 border-bottom'>COMFORT LEVEL</div>
             <div className='col-12 col-sm-6'>
               <div >
                 <div className='mb-2'>
                   <p className=' grey-text'>Humidity</p>
-                  <div className=''>{currentHumidity}%</div>
+                  <div className='font-weight'>{currentHumidity}%</div>
                 </div>
                 <div className='mb-2'>
                   <p className=' grey-text'>Pressure</p>
-                  <div className=''>{currentPressure} hPa</div>
+                  <div className='font-weight'>{currentPressure} hPa</div>
                 </div>
                 <div className='mb-2'>
                   <p className=' grey-text'>Temperature felt</p>
-                  <div className=''>{Math.round(feelsLikeTemp)}°C</div>
+                  <div className='font-weight'>{Math.round(feelsLikeTemp)}°C</div>
                 </div>
               </div>
               
@@ -89,15 +89,15 @@ export default function CurrentWeather({
 
         {/* <div className='row mb-5'> */}
         <div className='col-6 col-sm-3'>
-        <div className='col-12 col-sm-12 h5 mb-4 px-2'>WIND</div>
+        <div className='col-12 col-sm-12 h5 mb-4 px-2 border-bottom'>WIND</div>
         <div>
             <div className='mb-2'>
-              <p className='col-12 col-sm-6 grey-text'>Wind speed</p>
-              <div className='col-6 col-sm-6'>{windSpeed}</div>
+              <p className='col-12 col-sm-12 grey-text'>Wind speed</p>
+              <div className='col-12 col-sm-12 font-weight'>{windSpeed} m/s</div>
             </div>
             <div className='mb-2'>
-              <p className='col-12 col-sm-6 grey-text'>Wind direction</p>
-              <div className='col-6 col-sm-6'>{windCoords}-{windDeg}°</div>
+              <p className='col-12 col-sm-12 grey-text'>Wind direction</p>
+              <div className='col-12 col-sm-12 font-weight'>{windCoords}-{windDeg}°</div>
             </div>
         </div>
                     

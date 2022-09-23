@@ -74,11 +74,11 @@ function App() {
 
         <div className='row'>
         <div className='col-10 offset-1'>
-          <div className='row'>
-            {isShown && <p className='h5 mt-5 px-4'>3H FORECAST</p>}
+          <div className='row d-flex align-content-center justify-content-center gap-2'>
+            {isShown && <p className=' col-12 col-sm-12 h5 mt-5 px-4 px-sm-5 border-bottom '>3H FORECAST</p>}
             
           {!!forecast && forecast.map((i, index)=>(
-          <div className='col-6 col-sm-2 center mt-1 mb-1 d-flex flex-row forecast-box' key={index}>
+          <div className='col-6 col-sm-2  px-2 d-flex flex-row forecast-box' key={index}>
             <Weather 
               temp={i.main.temp} 
                

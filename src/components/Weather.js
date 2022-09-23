@@ -42,7 +42,7 @@ export  const  Weather = ({temp, dt_txt, sky, icon}) => {
         
 
 
-      <div className='center d-flex flex-row forecast-box'>
+      <div className='center d-flex flex-row '>
         <div style={{fontSize: 10}}>
         <div>{day}/{monthString}</div>
         <div>{hour}:{minute}</div>
